@@ -7,15 +7,15 @@ I wanted to analyze my photographic habits relating to the most used focal lengt
 
 # Usage
 
-Usage: stats_focal.sh [-d DIR] [-s STRING] [-f FORMAT]
-  -d DIR: root directory where the photos directories live, WITHOUT trailing slash; by default it's the current directory.
-  -s STRING: sets the STRING to look for in the EXIF data; default: 'Focal Length'.
-  -f FORMAT: sets the FORMAT of the camera; available values: 'm43', 'apsc', 'ff', 'mf'; default is 'm43'.
+	Usage: stats_focal.sh [-d DIR] [-s STRING] [-f FORMAT]
+  	  -d DIR: root directory where the photos directories live, WITHOUT trailing slash; by default it's the current directory.
+	  -s STRING: sets the STRING to look for in the EXIF data; default: 'Focal Length'.
+	  -f FORMAT: sets the FORMAT of the camera; available values: 'm43', 'apsc', 'ff', 'mf'; default is 'm43'.
 
-Examples:
-   ./stats_focal.sh -d /media/Fotos/2014 -> will proccess the *.jpg and *.JPG inside all the subdirectories under /media/Fotos/2014/.
-   ./stats_focal.sh -d /media/Fotos/2014 -s "Focal size" -> will proccess the *.jpg and *.JPG inside all the subdirectories under /media/Fotos/2014/ looking for string 'Focal size' in the EXIF data.
-   ./stats_focal.sh -f "apsc" -> will proccess the *.jpg and *.JPG inside all the subdirectories under the current directory, using format Full Frame to calculate the focal lenght.
+	Examples:
+	   ./stats_focal.sh -d /media/Fotos/2014 -> will proccess the *.jpg and *.JPG inside all the subdirectories under /media/Fotos/2014/.
+	   ./stats_focal.sh -d /media/Fotos/2014 -s "Focal size" -> will proccess the *.jpg and *.JPG inside all the subdirectories under /media/Fotos/2014/ looking for string 'Focal size' in the EXIF data.
+	   ./stats_focal.sh -f "apsc" -> will proccess the *.jpg and *.JPG inside all the subdirectories under the current directory, using format Full Frame to calculate the focal lenght.
 
 
 # How it works
