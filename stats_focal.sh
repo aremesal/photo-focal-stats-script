@@ -104,6 +104,8 @@ function countfiles {
 	SUBCOUNT=0
 }
 
+command -v exiftool >/dev/null 2>&1 || { echo >&2 "I require 'exiftool', but it's not installed.  Aborting."; exit 1; }
+
 if [ "$1" == "-h" ]; then
 	showhelp
 	exit 0
@@ -132,11 +134,11 @@ do
             ;;
 	-*) echo "Bad option $1"
 		showhelp
-		exit -1
+		exit 1
             ;;
 	--*) echo "Bad option $1"
 		showhelp
-		exit -1
+		exit 1
             ;;
         *)  eval $ARGG='$1'
             ;;
