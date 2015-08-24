@@ -34,4 +34,6 @@ The script can decide about which counter use according to the camera format: mi
   * Tele: 61-130mm
   * UltraTele: > 131mm
 
+# Requeriments
 
+This is a bash script, checked in Linux using Bash 4.3. It requires exiftool (it's included in libimage-exiftool-perl and/or libimage-info-perl.
